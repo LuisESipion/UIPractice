@@ -1,0 +1,78 @@
+body {
+    width: 1920px;
+    height: 1150px;
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main {}
+
+#rectangle-rose {
+    width: 781px;
+    height: 55px;
+    flex-shrink: 0;
+    background-color: #fd1ebd;
+    margin-block: 71px 48px;
+}
+
+#rectangle-yellow {
+    width: 611px;
+    height: 55px;
+    flex-shrink: 0;
+    background-color: #fffd38;
+}
+
+#section-practice {
+    width: 725px;
+    height: 746px;
+    flex-shrink: 0;
+    border-left: 1px solid white;
+    margin-left: 61px;
+}
+
+#section-practice h1 {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 50.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Inter", sans-serif;
+}
+
+#section-practice span {
+    color: #fff;
+    font-size: 289.846px;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#practice {
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 163.445px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#designedlove {
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 43.493px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#div-circle {
+    display: flex;
+}
