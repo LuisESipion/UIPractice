@@ -1,25 +1,55 @@
+/* ---- selectors by tags ---- */
 body {
     width: 1920px;
     height: 1150px;
     background-color: #000;
     color: white;
+    /* to demarcate the workspace */
     border: 2px solid white;
 }
 
+/* flexbox is implemented to your content */
 header {
     display: flex;
+    /* items in column */
     flex-direction: column;
+    /* items aligned to the end in the column */
     align-items: flex-end;
 }
 
-main {}
+footer {
+    display: flex;
+    /* flex default --> items in row */
+    /* items aligned to the end in the row */
+    justify-content: flex-end;
+    /* relative positioning to overlap with other elements */
+    position: relative;
+    /* is pushed from bottom to top by 164px due to relative position */
+    bottom: 164px;
+}
 
+footer img {
+    position: relative;
+    /* is pushed from top to bottom by 24.26px */
+    top: 24.26px;
+}
+
+footer div div {
+    width: 121.746px;
+    height: 33.835px;
+    background-color: #fffd38;
+    /* z-index: -1; move back a layer if this is overlapping */
+}
+
+/* ---- selectors by id ---- */
 #rectangle-rose {
     width: 781px;
     height: 55px;
+    /* property returned from figma */
     flex-shrink: 0;
     background-color: #fd1ebd;
-    margin-block: 71px 48px;
+    /* top and bottom margins */
+    margin-block: 71px 48px; 
 }
 
 #rectangle-yellow {
@@ -35,13 +65,17 @@ main {}
     flex-shrink: 0;
     border-left: 1px solid white;
     margin-left: 61px;
+    padding-left: 71px;
 }
 
 #section-practice h1 {
     color: rgba(255, 255, 255, 0.3);
     font-size: 50.4px;
+    /* normal or italic style */
     font-style: normal;
+    /* letter thickness */
     font-weight: 400;
+    /* letter font height */
     line-height: normal;
     font-family: "Inter", sans-serif;
 }
@@ -53,6 +87,8 @@ main {}
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    bottom: 61px;
 }
 
 #practice {
@@ -62,9 +98,11 @@ main {}
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: relative;
+    bottom: 122px;
 }
 
-#designedlove {
+#div-circle h2 {
     color: #fff;
     font-family: "Space Grotesk", sans-serif;
     font-size: 43.493px;
@@ -75,4 +113,95 @@ main {}
 
 #div-circle {
     display: flex;
+    position: relative;
+    bottom: 103px;
+}
+
+#div-circle img {
+    width: 55px;
+    height: 55px;
+    margin-left: 17px;
+}
+
+#div-autor {
+    display: flex;
+    position: relative;
+    bottom: 65px;
+}
+
+#div-autor h3 a {
+    color: #fffd38;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* property returned from figma */
+    text-decoration-line: underline;
+}
+
+#section-number span {
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#section-number {
+    width: 180px;
+    height: 426px;
+    position: relative;
+    right: 70px;
+    top: 65px;
+    display: flex;
+    align-items: center;
+}
+
+#section-number article {
+    display: flex;
+    align-items: center;
+}
+
+#container-practice {
+    display: flex;
+}
+
+/* the size of the container adapts to the size of its content (inline-block) */
+#section-brand {
+    display: inline-block;
+    position: relative;
+    left: 875px;
+    bottom: 430px;
+}
+
+#section-brand span {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 110px;
+    top: 30px;
+}
+
+#section-brand h2 {
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#container-star {
+    position: relative;
+    bottom: 61px;
+    right: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
